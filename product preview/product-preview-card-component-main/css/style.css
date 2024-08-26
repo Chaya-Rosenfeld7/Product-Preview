@@ -1,0 +1,117 @@
+/*Estos son tipografias importadas de google*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fuente-principal:"Montserrat", sans-serif;
+    --fuente-secundaria:"Fraunces", serif;
+    --color-fondo:#f8f1e5;
+    --color-blanco: #fff; 
+    --color-boton: #3d8168; 
+    --color-texo-claro: #6c7289; 
+    
+
+}
+
+/*selecciona todos los elemntos existentes de html*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-principal{
+    background-color: var(--color-blanco);
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foto-perfume{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contenedor-texto{
+    width: 50%;
+    height: 100%;
+    padding: 0px 32px 0px 32px;
+ 
+}
+.titulo-secundario{
+    font-family: var(--fuente-principal);
+    font-size: 12px;
+    color: var(--color-texo-claro);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.titulo-principal{
+    font-family: var(--fuente-secundaria);
+    font-size: 32px;
+    margin: 20px 0px 24px 0px;
+}
+
+.parafo{
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+    color: var(--color-texo-claro);
+}
+
+.contenedor-precio {
+    margin: 29px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    
+}
+
+.precio{
+    font-family: var(--fuente-secundaria);
+    font-size: 32px;
+    color: var(--color-boton);
+}
+
+.precio-antiguo{
+    font-family: var(--fuente-principal);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-texo-claro);
+    text-decoration: line-through;
+}
+.carrito-compras{
+    background-color: var(--color-boton);
+    color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+   
+}
+
+
+
+
+
